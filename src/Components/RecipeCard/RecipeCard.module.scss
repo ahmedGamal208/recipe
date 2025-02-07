@@ -26,8 +26,9 @@
   }
 
   .container {
-    @include flex(column, center, center);
+    @include flex(column, space-between, center);
     padding: 20px;
+    height: 100%;
     .foodImg {
       transform: translateY(-20%);
       @include flex(row, center, center);
@@ -41,7 +42,7 @@
 
     .info {
       @include flex(column, center, center);
-      gap: 10px;
+      gap: 20px;
 
       .upper {
         @include flex(column, center, center);
@@ -49,6 +50,7 @@
 
         .recipeName {
           @include font(cursive, 20px, 600);
+          text-align: center
         }
         .origin {
           @include flex(row, center, center);
@@ -60,7 +62,7 @@
 
       .view {
         @include font(cursive, 16px, 600);
-        padding: 5px 30px;
+        padding: 10px 30px;
         border-radius: 20px;
         color: white;
         background-color: rgb(30, 175, 129);

@@ -13,9 +13,10 @@
 .card .container {
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  justify-content: space-between;
   align-items: center;
   padding: 20px;
+  height: 100%;
 }
 .card .container .foodImg {
   transform: translateY(-20%);
@@ -34,7 +35,7 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  gap: 10px;
+  gap: 20px;
 }
 .card .container .info .upper {
   display: flex;
@@ -47,6 +48,7 @@
   font-family: cursive;
   font-size: 20px;
   font-weight: 600;
+  text-align: center;
 }
 .card .container .info .upper .origin {
   display: flex;
@@ -63,7 +65,7 @@
   font-family: cursive;
   font-size: 16px;
   font-weight: 600;
-  padding: 5px 30px;
+  padding: 10px 30px;
   border-radius: 20px;
   color: white;
   background-color: rgb(30, 175, 129);
