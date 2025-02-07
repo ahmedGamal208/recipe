@@ -19,9 +19,13 @@
 }
 .card .container .foodImg {
   transform: translateY(-20%);
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
 }
 .card .container .foodImg img {
-  width: 100%;
+  width: 80%;
   border-radius: 50%;
   transition: all 0.7s;
 }

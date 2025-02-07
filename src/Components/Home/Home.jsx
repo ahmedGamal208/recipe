@@ -12,7 +12,6 @@ const Home = () => {
           "https://www.themealdb.com/api/json/v1/1/search.php?s="
         );
         setMeals(data.meals || []);
-        // console.log(data);
       } catch (error) {
         console.error("Failed to fetch meals:", error);
       }
@@ -22,7 +21,6 @@ const Home = () => {
 
   return (
     <>
-      {/* <Navbar /> */}
       <div className="sm:ml-64 grid md:grid-cols-2 lg:grid-cols-4 gap-x-6 gap-y-20 px-10 py-20">
         {meals.map((meal) => (
           <RecipeCard key={meal.idMeal} meal={meal} />

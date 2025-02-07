@@ -30,9 +30,10 @@
     padding: 20px;
     .foodImg {
       transform: translateY(-20%);
+      @include flex(row, center, center);
 
       img {
-        width: 100%;
+        width: 80%;
         border-radius: 50%;
         transition: all 0.7s;
       }

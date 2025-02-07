@@ -5,7 +5,7 @@ const RecipeCard = ({ meal }) => {
   return (
     <div className={`${style.card}`}>
       <div className={`${style.container}`}>
-        <div className={`${style.foodImg} w-[220px] md:w-[150px] lg:w-[250px]`}>
+        <div className={`${style.foodImg}`}>
           <img className="" src={meal.strMealThumb} alt={meal.strMeal} />
         </div>
         <div className={`${style.info} `}>
