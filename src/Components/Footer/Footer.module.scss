@@ -1,0 +1,44 @@
+@mixin flex($dir, $justify-content, $align-items) {
+  display: flex;
+  flex-direction: $dir;
+  justify-content: $justify-content;
+  align-items: $align-items;
+}
+
+footer {
+  background-color: white;
+  .container {
+    font-family: cursive;
+
+    .flexContainer {
+      @include flex(row, space-between, center);
+      padding: 30px 0px;
+      border-bottom: 1px solid #c7cacf;
+      font-size: 24px;
+
+      .logo {
+        @include flex(row, flex-start, center);
+        width: 50px;
+        gap: 10px;
+        font-weight: 600;
+
+        img {
+          width: 100%;
+        }
+      }
+
+      .route {
+        color: rgb(29, 78, 216);
+        font-weight: 700;
+      }
+    }
+
+    .copyright {
+      text-align: center;
+      padding: 30px 0px;
+      font-weight: 400;
+      font-size: 14px;
+      color: rgb(107, 114, 128);
+    }
+  }
+}

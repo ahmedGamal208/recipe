@@ -1,0 +1,66 @@
+.card {
+  background-color: #fdfdfd;
+  transition: all 0.3s;
+  border-radius: 10%;
+}
+.card:hover {
+  transform: scale(1.05);
+  box-shadow: 0px 18px 10px -5px rgba(0, 0, 0, 0.2);
+}
+.card:hover .foodImg img {
+  transform: rotate(360deg);
+}
+.card .container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+}
+.card .container .foodImg {
+  transform: translateY(-20%);
+}
+.card .container .foodImg img {
+  width: 100%;
+  border-radius: 50%;
+  transition: all 0.7s;
+}
+.card .container .info {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
+.card .container .info .upper {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 2px;
+}
+.card .container .info .upper .recipeName {
+  font-family: cursive;
+  font-size: 20px;
+  font-weight: 600;
+}
+.card .container .info .upper .origin {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  font-family: cursive;
+  font-size: 16px;
+  font-weight: 400;
+  color: rgb(5, 150, 105);
+  gap: 10px;
+}
+.card .container .info .view {
+  font-family: cursive;
+  font-size: 16px;
+  font-weight: 600;
+  padding: 5px 30px;
+  border-radius: 20px;
+  color: white;
+  background-color: rgb(30, 175, 129);
+}/*# sourceMappingURL=RecipeCard.module.css.map */

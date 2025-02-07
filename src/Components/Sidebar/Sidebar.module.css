@@ -1,0 +1,43 @@
+aside {
+  background-color: #f9fafb;
+}
+aside .list {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
+aside .list .item {
+  width: 100%;
+  color: black;
+  font-family: cursive;
+  font-size: 18px;
+}
+aside .list .item .button {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+  transition: all 0.1s;
+  background-color: transparent;
+  padding: 10px 20px;
+  border-color: #e5e7eb;
+  border-width: 1px;
+  border-style: solid;
+  border-radius: 15px;
+}
+aside .list .item .button:hover {
+  transform: scale(1.06);
+}
+aside .list .item .meals {
+  background-color: #f29724 !important;
+  color: white;
+  box-shadow: 0px 10px 27px -3px rgba(242, 151, 36, 0.84);
+  border: none;
+  transition: all 0.2s;
+  font-weight: bold;
+}
+aside .list .item .meals:hover {
+  box-shadow: none;
+}/*# sourceMappingURL=Sidebar.module.css.map */

@@ -1,0 +1,74 @@
+.recipeDetails .container {
+  width: 90%;
+  margin-right: auto;
+  padding-left: 30px;
+}
+.recipeDetails .container .leftContainer .mealTitle {
+  font-family: Pacifico;
+  font-size: 48px;
+  font-weight: 600;
+  margin-bottom: 20px;
+}
+.recipeDetails .container .leftContainer .divBlock .left .foodImage img {
+  border-radius: 15px;
+}
+.recipeDetails .container .leftContainer .divBlock .left .buttons {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  font-family: cursive;
+  font-size: 16px;
+  font-weight: 400;
+  padding: 10px 0px;
+  gap: 20px;
+  color: white;
+  margin-top: 30px;
+}
+.recipeDetails .container .leftContainer .divBlock .left .buttons .youtube {
+  background-color: #dc2626;
+  padding: 7px 15px;
+  border-radius: 10px;
+}
+.recipeDetails .container .leftContainer .divBlock .left .buttons .youtube button i {
+  margin-right: 5px;
+}
+.recipeDetails .container .leftContainer .divBlock .left .buttons .source {
+  background-color: #21ba75;
+  padding: 7px 15px;
+  border-radius: 10px;
+}
+.recipeDetails .container .leftContainer .divBlock .left .buttons .source button i {
+  margin-right: 5px;
+}
+.recipeDetails .container .leftContainer .divBlock .middle p {
+  font-family: cursive;
+  font-size: 16px;
+  font-weight: 400;
+}
+.recipeDetails .container .right .card {
+  background-color: white;
+  padding: 20px 15px;
+  border-radius: 15px;
+}
+.recipeDetails .container .right .card .title {
+  font-family: cursive;
+  font-size: 24px;
+  font-weight: 600;
+  border-bottom: 3px solid #e5e7eb;
+  padding: 5px;
+  margin-bottom: 20px;
+}
+.recipeDetails .container .right .card .cardBody {
+  font-family: cursive;
+  font-size: 16px;
+  font-weight: 400;
+}
+.recipeDetails .container .right .card .ingredient {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 1px solid #e5e7eb;
+  padding: 5px;
+}/*# sourceMappingURL=RecipeDetails.module.css.map */

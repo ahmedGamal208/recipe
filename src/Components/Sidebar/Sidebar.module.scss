@@ -1,0 +1,47 @@
+@mixin flex($dir, $justify-content, $align-items) {
+  display: flex;
+  flex-direction: $dir;
+  justify-content: $justify-content;
+  align-items: $align-items;
+}
+
+aside {
+  background-color: #f9fafb;
+  .list {
+    @include flex(column, center, center);
+    gap: 10px;
+    .item {
+      width: 100%;
+      color: black;
+      font-family: cursive;
+      font-size: 18px;
+      .button {
+        @include flex(row, flex-start, center);
+        transition: all 0.1s;
+        background-color: transparent;
+        padding: 10px 20px;
+        border: {
+          color: #e5e7eb;
+          width: 1px;
+          style: solid;
+          radius: 15px;
+        }
+      }
+      .button:hover {
+        transform: scale(1.06);
+      }
+      .meals {
+        background-color: #f29724 !important;
+        color: white;
+        box-shadow: 0px 10px 27px -3px rgba(242, 151, 36, 0.84);
+        border: none;
+        transition: all 0.2s;
+        font-weight: bold;
+
+        &:hover {
+          box-shadow: none;
+        }
+      }
+    }
+  }
+}

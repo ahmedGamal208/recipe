@@ -1,0 +1,100 @@
+@mixin flex($dir, $justify-content, $align-items) {
+  display: flex;
+  flex-direction: $dir;
+  justify-content: $justify-content;
+  align-items: $align-items;
+}
+
+@mixin font($family, $size, $weight) {
+  font-family: $family;
+  font-size: $size;
+  font-weight: $weight;
+}
+
+.recipeDetails {
+  .container {
+    width: 90%;
+    margin-right: auto;
+    padding-left: 30px;
+
+    .leftContainer {
+      .mealTitle {
+        @include font(Pacifico, 48px, 600);
+        margin-bottom: 20px;
+      }
+      .divBlock {
+        .left {
+          .foodImage {
+            img {
+              border-radius: 15px;
+            }
+          }
+
+          .buttons {
+            @include flex(row, center, center);
+            @include font(cursive, 16px, 400);
+            padding: 10px 0px;
+            gap: 20px;
+            color: white;
+            margin-top: 30px;
+
+            .youtube {
+              background-color: #dc2626;
+              padding: 7px 15px;
+              border-radius: 10px;
+
+              button {
+                i {
+                  margin-right: 5px;
+                }
+              }
+            }
+
+            .source {
+              background-color: #21ba75;
+              padding: 7px 15px;
+              border-radius: 10px;
+
+              button {
+                i {
+                  margin-right: 5px;
+                }
+              }
+            }
+          }
+        }
+
+        .middle {
+          p {
+            @include font(cursive, 16px, 400);
+          }
+        }
+      }
+    }
+
+    .right {
+      .card {
+        background-color: white;
+        padding: 20px 15px;
+        border-radius: 15px;
+
+        .title {
+          @include font(cursive, 24px, 600);
+          border-bottom: 3px solid #e5e7eb;
+          padding: 5px;
+          margin-bottom: 20px;
+        }
+
+        .cardBody {
+          @include font(cursive, 16px, 400);
+        }
+
+        .ingredient {
+          @include flex(row, space-between, center);
+          border-bottom: 1px solid #e5e7eb;
+          padding: 5px;
+        }
+      }
+    }
+  }
+}

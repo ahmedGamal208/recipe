@@ -1,0 +1,38 @@
+footer {
+  background-color: white;
+}
+footer .container {
+  font-family: cursive;
+}
+footer .container .flexContainer {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  padding: 30px 0px;
+  border-bottom: 1px solid #c7cacf;
+  font-size: 24px;
+}
+footer .container .flexContainer .logo {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+  width: 50px;
+  gap: 10px;
+  font-weight: 600;
+}
+footer .container .flexContainer .logo img {
+  width: 100%;
+}
+footer .container .flexContainer .route {
+  color: rgb(29, 78, 216);
+  font-weight: 700;
+}
+footer .container .copyright {
+  text-align: center;
+  padding: 30px 0px;
+  font-weight: 400;
+  font-size: 14px;
+  color: rgb(107, 114, 128);
+}/*# sourceMappingURL=Footer.module.css.map */
