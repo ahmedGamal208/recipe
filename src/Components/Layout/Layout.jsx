@@ -1,9 +1,9 @@
 import { QueryClient, QueryClientProvider } from "react-query";
 import { Outlet, useLocation } from "react-router";
+import { useEffect } from "react";
 import Sidebar from "./../Sidebar/Sidebar";
 import Navbar from "../Navbar/Navbar";
 import Footer from "./../Footer/Footer";
-import { useEffect } from "react";
 
 const Layout = () => {
   const queryClient = new QueryClient();
@@ -42,15 +42,13 @@ const Layout = () => {
     !location.pathname.includes("/recipeDetails") &&
     !location.pathname.includes("/error");
   return (
-    <>
-      <QueryClientProvider client={queryClient}>
-        <Sidebar />
-        {showNavbar && <Navbar />}
+    <QueryClientProvider client={queryClient}>
+      <Sidebar />
+      {showNavbar && <Navbar />}
 
-        <Outlet></Outlet>
-        <Footer />
-      </QueryClientProvider>
-    </>
+      <Outlet></Outlet>
+      <Footer />
+    </QueryClientProvider>
   );
 };
 

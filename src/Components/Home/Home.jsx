@@ -1,5 +1,5 @@
-import { useEffect, useState } from "react";
 import axios from "axios";
+import { useEffect, useState } from "react";
 import RecipeCard from "./../RecipeCard/RecipeCard";
 
 const Home = () => {
@@ -20,13 +20,11 @@ const Home = () => {
   }, []);
 
   return (
-    <>
-      <div className="sm:ml-64 grid md:grid-cols-2 lg:grid-cols-4 gap-x-6 gap-y-20 px-10 py-20">
-        {meals.map((meal) => (
-          <RecipeCard key={meal.idMeal} meal={meal} />
-        ))}
-      </div>
-    </>
+    <div className="sm:ml-64 grid md:grid-cols-2 lg:grid-cols-4 gap-x-6 gap-y-20 px-10 py-20">
+      {meals.map((meal) => (
+        <RecipeCard key={meal.idMeal} meal={meal} />
+      ))}
+    </div>
   );
 };
 
