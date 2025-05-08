@@ -29,6 +29,10 @@
   background-color: #dc2626;
   padding: 7px 15px;
   border-radius: 10px;
+  transition: all 0.3s;
+}
+.recipeDetails .container .leftContainer .divBlock .left .buttons .youtube:hover {
+  background-color: #a81d1d;
 }
 .recipeDetails .container .leftContainer .divBlock .left .buttons .youtube button i {
   margin-right: 5px;
@@ -37,6 +41,10 @@
   background-color: #21ba75;
   padding: 7px 15px;
   border-radius: 10px;
+  transition: all 0.3s;
+}
+.recipeDetails .container .leftContainer .divBlock .left .buttons .source:hover {
+  background-color: #178352;
 }
 .recipeDetails .container .leftContainer .divBlock .left .buttons .source button i {
   margin-right: 5px;

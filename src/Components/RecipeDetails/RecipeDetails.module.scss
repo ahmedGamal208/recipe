@@ -42,6 +42,10 @@
               background-color: #dc2626;
               padding: 7px 15px;
               border-radius: 10px;
+              transition: all 0.3s;
+              &:hover {
+                background-color: #a81d1d;
+              }
 
               button {
                 i {
@@ -54,6 +58,10 @@
               background-color: #21ba75;
               padding: 7px 15px;
               border-radius: 10px;
+              transition: all 0.3s;
+              &:hover {
+                background-color: #178352;
+              }
 
               button {
                 i {

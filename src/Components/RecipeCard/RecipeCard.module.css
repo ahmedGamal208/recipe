@@ -29,6 +29,7 @@
   width: 80%;
   border-radius: 50%;
   transition: all 0.7s;
+  box-shadow: 1px 15px 22px -4px rgba(0, 0, 0, 0.58);
 }
 .card .container .info {
   display: flex;
@@ -69,4 +70,8 @@
   border-radius: 20px;
   color: white;
   background-color: rgb(30, 175, 129);
+  transition: all 0.3s;
+}
+.card .container .info .view:hover {
+  background-color: rgb(10, 109, 78);
 }/*# sourceMappingURL=RecipeCard.module.css.map */
